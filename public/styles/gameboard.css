@@ -1,0 +1,145 @@
+table.board{
+    border-style: solid;
+    border-color: black;
+    border-spacing: 0;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.tableRow {
+    display:flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+td.board-square{
+    width:70px;
+    height: 70px;
+}
+
+.green {
+    background-color:green;
+}
+
+.white {
+    background: white;
+}
+
+.pieceImg {
+    width:60%;
+    height: 80%;
+    pointer-events: none;
+}
+
+.board-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chooseSide p {
+    text-align: center;
+}
+
+.clickablePiece {
+    cursor:pointer;
+}
+
+.grey {
+    background-color: rgba(0, 0, 0, 0.377);
+    width: 40%;
+    height:40%;
+    pointer-events: none;
+    
+}
+div.promotingChoiceBox{
+    border-style: solid;
+    background-color: blue;
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-width:5px;
+}
+div.promotingChoiceBox img{
+    width:70px;
+    height:70px;
+}
+
+div.promotingChoiceBox img:hover{
+    cursor:pointer;
+}
+
+div#choiceBox {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 190px;
+}
+div#choiceBox button{
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 80%;
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+    border-width: 8px;
+    width: 210px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: red;
+    display:flex;
+    align-items: center;
+}
+div#choiceBox button:hover{
+    transition:font-weight;
+    opacity: 100%;
+    font-weight: bolder;
+}
+
+
+.dying-square .grey{
+    background-color: red;
+}
+
+div#choiceBox button img{
+    width:40px;
+    height:90%;
+}
+
+@keyframes exploding {
+    0%{
+    border-style:solid;
+    border-width: 10px;
+    border-radius: 50%;}
+    100%{
+        border-style:solid;
+    transform: scale(3);
+    border-color: rgb(255, 2, 2);
+    border-width: 10px;
+    border-radius: 50%;
+    background: orange;
+    overflow:hidden;
+    }
+  }
+
+.exploding{ 
+    animation-name: exploding;
+    animation-duration: 1s;
+}
+
+.endDisplay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-top: 193px;
+}
+
+.endDisplay p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 60px;
+    margin: 70px;
+    font-size: 50px;
+    text-align: center;
+    color:rgb(0, 233, 0);
+}
