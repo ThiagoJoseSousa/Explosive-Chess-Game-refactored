@@ -8,6 +8,7 @@ This time, I filtered the ilegal moves separatedly from the function we get them
 Ideas to improve the code:
 - Divide MVC into folders, dividing the file into other files in a modular manner.
 - Make the end overlay a bit more responsive. 
+- Make the game acessible for screen readers
 
 Ideas to improve the project:
 - Make animations on placing pieces, holding the piece...
